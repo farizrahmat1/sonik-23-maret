@@ -1,0 +1,71 @@
+.widget {
+  display: flex;
+  flex: 1;
+  padding: 10px;
+  justify-content: space-between;
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  border-radius: 10px;
+  height: 100px;
+  flex-direction: row;
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .icon {
+      font-size: 30px;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    .station {
+      background-color: rgba(65, 142, 206, 0.47);
+    }
+    .battery {
+      background-color: rgba(171, 189, 12, 0.966);
+    }
+    .money {
+      background-color: rgba(51, 139, 0, 0.966);
+    }
+    .electric {
+      background-color: rgb(238, 255, 0);
+    }
+    .registered {
+      background-color: rgb(20, 174, 221);
+    }
+    .connected {
+      background-color: rgb(49, 223, 49);
+    }
+    .active {
+      background-color: rgba(201, 0, 0, 0.829);
+    }
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    // gap: 1rem;
+
+    .title {
+      font-weight: bold;
+      font-size: 14px;
+      color: rgba(160, 160, 160);
+    }
+    .counter {
+      font-size: 28px;
+      font-weight: 300;
+      text-align: left;
+    }
+    .link {
+      font-size: 12px;
+      border-bottom: 1px solid gray;
+      width: max-content;
+      cursor: pointer;
+      & {
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.form {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  height: 100vh;
+  padding: 0px 60px;
+  border-radius: 10px;
+}
+input {
+  padding: 15px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.add {
+  background-color: #178ed3;
+  color: white;
+  height: 40px;
+  width: 60px;
+  border-radius: 5px;
+  border: 3px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.error {
+  font-size: 18px;
+  padding: 3px;
+  color: red;
+  display: none;
+}
+
+.seeallcs {
+  font-size: 18px;
+  text-decoration: none;
+}
+.labelBox {
+  background-color: rgb(174, 175, 178);
+  height: 60px;
+  font-size: 18p;
+  color: rgb(2, 0, 0);
+  border: 2px ridge grey;
+  border-radius: 3px;
+}
+.labelBox select {
+  margin-left: 5px;
+}

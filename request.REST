@@ -1,0 +1,216 @@
+#Charging station
+###
+GET http://localhost:8800/cs
+
+###
+GET http://localhost:8800/cs/6
+
+###add
+POST http://localhost:8800/cs
+Content-Type: application/json
+
+{
+    "NAME" : "Testing CS 7",
+    "CHARGE_BOX_PK" : "9",
+    "CITY" : 7,
+    "OVERALL_STATUS" : 2
+}
+
+###update
+POST  http://localhost:8800/cs/35
+Content-Type: application/json
+
+{
+    "NAME" : "Testing CS 3 Update 3",
+    "CHARGE_BOX_PK" : "6",
+    "CITY" : 3,
+    "OVERALL_STATUS" : 2,
+    "DATE_CREATED" : "{{$timestamp}}" ,
+    "DATE_MODIFIED" : "{{$datetime rfc1123}}"
+}
+###
+DELETE  http://localhost:8800/cs/17
+
+
+#customer
+###
+GET http://localhost:8800/customer
+###
+GET http://localhost:8800/customer/5
+
+###add
+POST http://localhost:8800/customer
+Content-Type: application/json
+
+{
+    "NAME" : "Abdul Ahmad",
+    "id_tag" : "A123",
+    "EMAIL" : "ahmad@gmail.com",
+    "ADDRESS" : "Puspiptek",
+    "PHONE_NUMBER" : "081234567890"
+}
+
+###update
+POST  http://localhost:8800/customer/5
+Content-Type: application/json
+
+{
+    "NAME" : "Abdul Ahmad",
+    "id_tag" : "A123",
+    "EMAIL" : "ahmad@gmail.com",
+    "ADDRESS" : "Puspiptek",
+    "PHONE_NUMBER" : "081234567890"
+}
+###
+DELETE  http://localhost:8800/customer/10
+
+#transaction
+###
+GET http://localhost:8800/transaction
+###
+GET http://localhost:8800/transaction/3
+
+###add
+POST  http://localhost:8800/transaction
+Content-Type: application/json
+
+{
+    "ID_CS" : "6",
+    "CS_NAME" : "EV Charger Site BPPT Puspitek",
+    "CONNECTOR_TYPE" :"Type 2",
+    "ID_TAG" :"4242",
+    "ENERGY_CONSUMPTION" : 5.6
+}
+
+###update
+POST  http://localhost:8800/transaction/5
+Content-Type: application/json
+
+{
+    "ID_CS" : "6",
+    "CS_NAME" :"EV Charger Site BPPT Puspitek",
+    "CONNECTOR_TYPE" :"ChadeMO",
+    "ID_TAG" :"4242",
+    "ENERGY_CONSUMPTION" : 10.2
+}
+###
+DELETE  http://localhost:8800/transaction/3
+
+#auth
+###register
+POST http://localhost:8800/auth/register
+Content-Type: application/json
+
+{
+    "NAME" : "Admin",
+    "EMAIL" : "admin1@gmail.com",
+    "PASSWORD" : "123456789",
+    "KTP" : "123456789012345"
+}
+
+###login
+POST http://localhost:8800/auth/login
+Content-Type: application/json
+
+{
+    "EMAIL" : "admin1@gmail.com",
+    "PASSWORD" : "123456789"
+}
+
+###logout
+POST http://localhost:8800/auth/logout
+Content-Type: application/json
+
+{
+}
+
+#warning
+###
+GET http://localhost:8800/warning
+
+#warning
+###
+GET http://localhost:8800/warning/1
+
+#warning
+###
+GET http://localhost:8800/activity
+
+#warning
+###
+GET http://localhost:8800/activity/1
+
+#connectorTransaction
+###
+GET http://localhost:8800/transactionCustomer
+
+#reportData
+###
+GET http://localhost:8800/reportData
+
+###addcUSTOMER
+POST http://localhost:8800/customer/
+Content-Type: application/json
+
+{
+    "NAME" : "Abdul Ahmad",
+    "id_tag" : "QWEQW123456",
+    "EMAIL" : "ahmad@gmail.com",
+    "ADDRESS" : "Puspiptek",
+    "PHONE_NUMBER" : "081234567890",
+    "ocpp_tag_pk" : 90,
+    "expiry_date" : "2023-12-31 23:59:00.000000",
+    "max_active_transaction_count" : 1
+}
+
+###addCS
+POST http://localhost:8800/cs
+Content-Type: application/json
+
+{
+    "NAME" : "Testing CS",
+    "charge_box_id" : "BPPT-THAMRIN",
+    "ENDPOINT_ADDRESS" : "127.0.0.1",
+    "CITY" : 7,
+    "LOCATION" : "Muncul",
+    "LONGITUDE" : "106.673483",
+    "LATITUDE" : "-6.348536",
+    "ocpp_protocol" : "ocpp1.6J",
+    "registration_status" : "Accepted",
+    "insert_connector_status_after_transaction_msg" : 1
+}
+
+###updateCS
+POST http://localhost:8800/cs/15
+Content-Type: application/json
+
+{
+    "NAME" : "Testing CS Update",
+    "charge_box_id" : "test",
+    "ENDPOINT_ADDRESS" : "127.0.0.1",
+    "CITY" : 7,
+    "LOCATION" : "Muncul",
+    "LONGITUDE" : "106.673483",
+    "LATITUDE" : "-6.348536"
+}
+
+###addCS
+POST http://localhost:8800/cs/connectorStatus
+Content-Type: application/json
+
+{
+    "connector_pk" : 184,
+    "status" : "Available",
+    "error_code" : "NoError",
+    "error_info" : "",
+    "vendor_id" : "",
+    "vendor_error_code" : ""
+}
+
+#getCOnnector Status
+###
+GET http://localhost:8800/cs/getConnectorStatus/
+Content-Type: application/json
+{
+    "charge_box_id" : "123123"
+}

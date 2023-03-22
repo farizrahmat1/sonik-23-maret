@@ -1,0 +1,40 @@
+.form {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    height: 100vh;
+    padding: 0px 60px;
+    border-radius: 10px;
+  }
+  input {
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+  
+  .updatePageButton {
+    background-color: #058f0c;
+    color: white;
+    height: 40px;
+    width: 70px;
+    border-radius: 5px;
+    border: 3px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .error{
+    font-size: 18px;
+    padding: 3px;
+    color: red;
+    display: none;
+  }
+  
+  .seeallcs {
+      font-size: 18px;
+      text-decoration: none;
+  }
+  

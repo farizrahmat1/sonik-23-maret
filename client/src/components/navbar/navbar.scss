@@ -1,0 +1,74 @@
+.navbar {
+  height: 50px;
+  border-bottom: 0.5px solid rgb(231, 228, 228);
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+  padding-bottom: 10px;
+
+  .wrapper {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // background-color: black;
+
+    // .search {
+    //   display: flex;
+    //   align-items: center;
+    //   border: 1px solid lightgray;
+    //   padding: 3px;
+    //   height: 30px;
+    //   margin-top: 5px;
+      
+      input {
+        border: none;
+        outline: none;
+        background: transparent;
+
+        &::placeholder {
+          font-size: 12px;
+        }
+      }
+    }
+    .items {
+      display: flex;
+      align-items: center;
+
+      .item {
+        align-items: center;
+        margin-right: 20px;
+
+        .icon {
+          font-size: 22px;
+        }
+
+        .logo {
+          width: 100px;
+          height: 35px;
+          margin-right: -10px;
+          cursor: pointer;
+          
+        }
+        .brin-img {
+          align-items: center;
+          margin-right: 20px;
+          font-size: 22px;
+          object-position: right;
+        }
+        // .counter{
+        //     width: 15px;
+        //     height: 15px;
+        //     background-color: red;
+        //     border-radius: 50%;
+        //     color: white;
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: center;
+        // }
+      }
+    }
+  }
+

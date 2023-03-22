@@ -1,0 +1,20 @@
+[
+    {
+        "chargingstation": "EV Charger Site BPPT Thamrin",
+        "location" : "10, RT.10/RW.10, Kampung Bali, Tanah Abang, Central Jakarta City, Jakarta 10250",
+        "lat": "-6.184973",
+        "lng": "106.821830"
+    },
+    {
+        "chargingstation": "EV Charger Site BPPT Puspitek",
+        "location" : "Pabuaran, Kec. Gn. Sindur, Bogor, Jawa Barat 16340",
+        "lat": "-6.358623",
+        "lng": "106.666833"
+    },
+    {
+        "chargingstation": "EV Charger Site C Bandung",
+        "location" : "Jl. Soekarno Hatta No.442, Pasirluyu, Kec. Regol, Kota Bandung, Jawa Barat 40254",
+        "lat": "-6.949609",
+        "lng": "107.619613"
+    }
+]

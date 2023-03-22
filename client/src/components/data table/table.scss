@@ -1,0 +1,125 @@
+.tableCs {
+  margin-left: 10px;
+  padding-bottom: 10px;
+  margin-right: 10px;
+}
+.status {
+  width: 50px;
+
+  .on {
+    background-color: #388e3c;
+    height: 30px;
+    border-radius: 5px;
+  }
+  .off {
+    background-color: #d32f2f;
+    height: 30px;
+    border-radius: 5px;
+  }
+}
+.addHome {
+  background-color: #178ed3;
+  color: white;
+  height: 40px;
+  width: 50px;
+  border-radius: 5px;
+  border: 3px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.delete {
+  background-color: #c42b2b;
+  color: white;
+  height: 35px;
+  width: 60px;
+  border-radius: 5px;
+  border: 3px;
+  cursor: pointer;
+}
+.update {
+  margin-left: 15px;
+  background-color: #058f0c;
+  color: white;
+  height: 35px;
+  width: 60px;
+  border-radius: 5px;
+  border: 3px;
+  cursor: pointer;
+}
+.csDetail {
+  margin-left: 15px;
+  background-color: #e4dd03;
+  color: white;
+  height: 35px;
+  width: 60px;
+  border-radius: 5px;
+  border: 3px;
+  cursor: pointer;
+}
+.connector {
+  background-color: #1959e5;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  color: white;
+  border-radius: 15px;
+  line-height: normal;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+  height: 40px;
+  margin-left: 15px;
+}
+.connectorStatus {
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  color: white;
+  border-radius: 15px;
+  margin-left: 15px;
+}
+.action {
+  display: flex;
+}
+.availableColour {
+  background-color: #04dc5a !important;
+}
+.unavailableColour {
+  background-color: #100e1a !important;
+}
+.heartbeatTimestampStatus {
+  padding: 10px 10px;
+  margin-bottom: 5px;
+  color: white;
+  border-radius: 15px;
+  margin-left: 15px;
+  line-height: normal;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.connectedHeartbeatTimestamp {
+  background-color: #00ff66 !important;
+  // padding: 5px;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  border-radius: 15px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.disconnectedHeartbeatTimestamp{
+  background-color: #ff2a00 !important;
+  // padding: 5px;
+  display: flex;
+  width: 120px;
+  height: 30px;
+  border-radius: 15px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}

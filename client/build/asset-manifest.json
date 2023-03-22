@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/test-deploy-sonik/static/css/main.a9183a3b.css",
+    "main.js": "/test-deploy-sonik/static/js/main.02cc2097.js",
+    "index.html": "/test-deploy-sonik/index.html",
+    "main.a9183a3b.css.map": "/test-deploy-sonik/static/css/main.a9183a3b.css.map",
+    "main.02cc2097.js.map": "/test-deploy-sonik/static/js/main.02cc2097.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9183a3b.css",
+    "static/js/main.02cc2097.js"
+  ]
+}
